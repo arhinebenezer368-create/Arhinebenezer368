@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scort366 | Home</title>
+  <meta name="description" content="Welcome to Scort366 – professional website with portfolio, services, blog, and contact.">
+  <meta name="keywords" content="Scort366, home, portfolio, blog, services, contact">
+  <meta name="author" content="Scort366 Team">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Scort366 | Home">
+  <meta property="og:description" content="Welcome to Scort366 – professional website with portfolio, services, blog, and contact.">
+  <meta property="og:image" content="https://yourusername.github.io/scort366/images/logo.png">
+  <meta property="og:url" content="https://yourusername.github.io/scort366/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Scort366 Logo">
+      <h1>Scort366</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <input type="text" placeholder="Search..." id="search-bar">
+      <button onclick="search()">Search</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome to Scort366</h2>
+    <p>Your professional website is now live and ready for updates.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Scort366. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Scort366 Logo">
+    <h1>Scort366</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <input type="text" placeholder="Search..." id="search-bar">
+    <button onclick="search()">Search</button>
+  </nav>
+</header>
+<footer>
+  <p>&copy; 2026 Scort366. All rights reserved.</p>
+</footer>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+console.log("Scort366 website is running!");
+
+function search() {
+  const query = document.getElementById("search-bar").value;
+  if(query) {
+    alert(`You searched for: ${query}`);
+  } else {
+    alert("Please enter a search term.");
+  }
+}
+const liveServer = require("live-server");
+
+const params = {
+    port: 5500,
+    root: ".",
+    open: true,
+    file: "index.html",
+    wait: 100,
+    logLevel: 2
+};
+
+liveServer.start(params);
+
+console.log("Scort366 7-page website running locally at http://127.0.0.1:5500");
+User-agent: *
+Allow: /
+Sitemap: https://yourusername.github.io/scort366/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yourusername.github.io/scort366/index.html</loc></url>
+  <url><loc>https://yourusername.github.io/scort366/about.html</loc></url>
+  <url><loc>https://yourusername.github.io/scort366/services.html</loc></url>
+  <url><loc>https://yourusername.github.io/scort366/portfolio.html</loc></url>
+  <url><loc>https://yourusername.github.io/scort366/blog.html</loc></url>
+  <url><loc>https://yourusername.github.io/scort366/contact.html</loc></url>
+  <url><loc>https://yourusername.github.io/scort366/faq.html</loc></url>
+</urlset>
+// First, make sure live-server is installed
+// npm install live-server --save-dev
+
+const liveServer = require("live-server");
+
+const params = {
+    port: 5500,            // Local port to run your site
+    root: ".",             // Root folder (current project folder)
+    open: true,            // Open in default browser automatically
+    file: "index.html",    // Start page
+    wait: 100,             // Wait 100ms before reloading on changes
+    logLevel: 2            // Logs messages in console
+};
+
+liveServer.start(params);
+
+console.log("Scort366 7-page website is running locally at http://127.0.0.1:5500");
